@@ -16,6 +16,7 @@ Thumbs.db
 *.jar
 *.war
 *.ear
+**/bin/
 
 # === Logs ===
 *.log
@@ -27,3 +28,5 @@ Thumbs.db
 *.tmp
 *.swp
 db/
+!sleep/src/main/resources/db/migration/  
+!sleep/src/main/resources/db/migration/*.sql 
