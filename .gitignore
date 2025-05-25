@@ -27,6 +27,6 @@ Thumbs.db
 # === Misc ===
 *.tmp
 *.swp
-/db/
+db/
 !sleep/src/main/resources/db/migration/  
 !sleep/src/main/resources/db/migration/*.sql 
