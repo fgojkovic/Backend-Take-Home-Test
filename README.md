@@ -20,7 +20,11 @@ The solution uses Java with Spring Boot, Spring Data JPA for database interactio
 
 ## 🚀 Getting Started
 
-### 📋 Installation
+### 🗄️ Database Setup
+
+The project uses PostgreSQL as the database. You can set up the database using Docker.
+
+#### 🐳 Using Docker
 
 1. Clone the repository:
    ```
@@ -30,35 +34,17 @@ The solution uses Java with Spring Boot, Spring Data JPA for database interactio
    ```
    cd Backend-Take-Home-Test
    ```
-3. Build the project:
+3. Make sure Docker is installed and running.
+4. Run the following command to build application:
    ```
-   ./gradlew build
+   docker-compose up --build -d
    ```
-4. Run the application:
-   ```
-   ./gradlew bootRun
-   ```
+5. The database will be available at `localhost:5432`.
+6. The application will be available at `localhost:8080`.
 
-### 🗄️ Database Setup
+## 🛠️ Migrations
 
-The project uses PostgreSQL as the database. You can set up the database using Docker.
-
-#### 🐳 Using Docker
-
-1. Make sure Docker is installed and running.
-2. Run the following command to start the PostgreSQL container:
-   ```
-   docker-compose up -d db
-   ```
-3. The database will be available at `localhost:5432`.
-
-## 🛠️ Running Migrations
-
-The project uses Flyway for database migrations. To run the migrations, use the following command:
-
-```
-./gradlew flywayMigrate
-```
+The project uses Flyway for database migrations.
 
 ## 🔌 API Endpoints
 
